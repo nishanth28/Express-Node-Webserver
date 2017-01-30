@@ -1,4 +1,4 @@
-var middleware = {
+var middleWare = {
 	requireAuthentication : function (request,request, next){
 		console.log('Route Needs Authentication!');
 		next();
@@ -10,4 +10,4 @@ var middleware = {
 };
 
 
-module exports = middleware;
+module exports = middleWare;

@@ -8,7 +8,7 @@ var middleware = require('/.middleWare.js')
 
 
 //application level middleware
-app.use(middleware.logger);
+app.use(middleWare.logger);
 //put,patch,delete
 app.get('/about', middleware.requireAuthentication, function (request,response){
 	response.send('Nishanth-iOS/Full Stack Developer');
