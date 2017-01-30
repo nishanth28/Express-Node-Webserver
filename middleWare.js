@@ -4,10 +4,10 @@ var middleWare = {
 		next();
 	},
 	logger : function (request,response,next) {
-		console.log('Request :'request.method+' '+request.originalUrl);
+		console.log('Request :'+request.method+' '+request.originalUrl);
 		next();
 	}
 };
 
 
-module exports = middleWare;
+module.exports = middleWare;

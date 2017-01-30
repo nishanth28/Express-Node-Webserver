@@ -3,14 +3,14 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 var date = new Date().toString();
 
-var middleware = require('/.middleWare.js')
+var middleWare = require('./middleWare.js')
 
 
 
 //application level middleware
 app.use(middleWare.logger);
 //put,patch,delete
-app.get('/about', middleware.requireAuthentication, function (request,response){
+app.get('/about', middleWare.requireAuthentication, function (request,response){
 	response.send('Nishanth-iOS/Full Stack Developer');
 });
 
